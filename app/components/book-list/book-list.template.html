@@ -1,0 +1,24 @@
+<div style="margin-top: 20px;">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="book in $ctrl.books">
+            <td>{{ book.id }}</td>
+            <td>{{ book.name }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.genre }}</td>
+            <td><span class="badge badge-success">{{ book.status }}</span></td>
+        </tr>
+
+
+        </tbody>
+    </table>
+</div>
