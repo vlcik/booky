@@ -10,7 +10,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="book in $ctrl.books">
+        <tr ng-repeat="book in $ctrl.books | filter: $ctrl.query">
             <td>{{ book.id }}</td>
             <td>{{ book.name }}</td>
             <td>{{ book.author }}</td>
