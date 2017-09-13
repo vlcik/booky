@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "name": "Jungle Book",
+    "author": "Rudyard Kipling",
+    "genre": "Novel",
+    "status": "read"
+  },
+  {
+    "id": "2",
+    "name": "The Lord Of The Rings",
+    "author": "John Reuel Roland Tolkien",
+    "genre": "novel",
+    "status": "read"
+  },
+  {
+    "id": "3",
+    "name": "The Key of The Kingdom",
+    "author": "A.J. Cronin",
+    "genre": "novel",
+    "status": "read"
+  },
+  {
+    "id": "4",
+    "name": "Misery",
+    "author": "Stephen King",
+    "genre": "novel",
+    "status": "unread"
+  },
+  {
+    "id": "5",
+    "name": "The Godfather",
+    "author": "Mario Puzzo",
+    "genre": "novel",
+    "status": "read"
+  },
+  {
+    "id": "6",
+    "name": "Robert Louis Stevenson",
+    "author": "The Treasure island",
+    "genre": "novel",
+    "status": "read"
+  },
+  {
+    "id": "7",
+    "name": "Jules Verne",
+    "author": "Eight Hundred Leagues on the Amazon",
+    "genre": "novel",
+    "status": "unread"
+  }
+]
