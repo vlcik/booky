@@ -3,29 +3,31 @@
         <h2>New Book</h2>
         <div class="form-group">
             <label class="form-control-label" for="name">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Name">
+            <input type="text" class="form-control" id="name" placeholder="Name" ng-model="book.name">
         </div>
         <div class="form-group">
             <label class="form-control-label" for="author">Author</label>
-            <input type="text" class="form-control" id="author" placeholder="Author">
+            <input type="text" class="form-control" id="author" placeholder="Author" ng-model="book.author" required>
         </div>
         <div class="form-group">
             <label for="genre" class="col-form-label">Genre</label>
-            <select id="genre" class="form-control">
+            <select id="genre" class="form-control" ng-model="book.genre">
                 <option selected>Choose...</option>
-                <option value="1">Novel</option>
-                <option value="2">Science fiction</option>
-                <option value="3">Fantasy</option>
+                <option value="NOVEL">Novel</option>
+                <option value="SCIFI">Science fiction</option>
+                <option value="FANTASY">Fantasy</option>
             </select>
         </div>
         <div class="form-group">
             <label for="status" class="col-form-label">Status</label>
-            <select id="status" class="form-control">
+            <select id="status" class="form-control" ng-model="book.status">
                 <option selected>Choose...</option>
-                <option value="1">Read</option>
-                <option value="2">Partly read</option>
-                <option value="3">Unread</option>
+                <option value="READ">Read</option>
+                <option value="PARTLY_READ">Partly read</option>
+                <option value="UNREAD">Unread</option>
             </select>
         </div>
+        <button type="submit" class="btn btn-primary" ng-click="$ctrl.saveOrUpdate(book)">Submit</button>
+        <button type="submit" class="btn btn-danger" ng-click="$ctrl.reset()">Reset</button>
     </form>
 </div>
