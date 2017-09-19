@@ -9,7 +9,7 @@
   {
     "id": "2",
     "name": "The Lord Of The Rings",
-    "author": "John Reuel Roland Tolkien",
+    "author": "John Ronald Reuel Tolkien",
     "genre": "novel",
     "status": "read"
   },
@@ -43,15 +43,15 @@
   },
   {
     "id": "7",
-    "name": "Jules Verne",
-    "author": "Eight Hundred Leagues on the Amazon",
+    "name": "Eight Hundred Leagues on the Amazon",
+    "author": "Jules Verne",
     "genre": "novel",
     "status": "unread"
   },
   {
     "id": "8",
-    "name": "Jules Verne",
-    "author": "Michail Strogov",
+    "name": "Michail Strogov",
+    "author": "Jules Verne",
     "genre": "novel",
     "status": "partly"
   }

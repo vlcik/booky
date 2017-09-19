@@ -3,16 +3,18 @@ angular
     .component('bookList', {
         bindings: {},
         templateUrl: '/components/book-list/book-list.template.html',
-        controller: ['$http', BookListController]
+        controller: ['BookService', BookListController]
     });
 
-function BookListController($http) {
+function BookListController(BookService) {
+    this.query = '';
     var self = this;
-    this.query = "";
-    //$http.get('http://localhost:8080/Booky/books')
-    $http
-        .get('assets/json/books.json')
-        .then(function(response){
+    BookService.list().then(
+        function (response) {
             self.books = response.data;
-        });
+        },
+        function (error) {
+            alert(error);
+        }
+    );
 }
