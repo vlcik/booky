@@ -1,23 +1,22 @@
 angular
     .module('core.book')
     .factory('BookService', ['$http', function ($http) {
-        return {
-            list: function () {
-                return $http({
-                        method: 'GET',
-                        url: 'assets/json/books.json'
-                    })
-                    .success(function(response) {
-                        response.data;
-                    })
-                    .error(function(error) {
-                            console.error(error);
-                    });
-            },
-            // API
-            get: function (bookId) {
 
-            },
+        var getList = function () {
+            return $http({
+                    method: 'GET',
+                    url: 'assets/json/books.json'
+                })
+                .success(function(response) {
+                    return response.data;
+                })
+                .error(function(error) {
+                    console.error(error);
+                });
+        };
+
+        return {
+            list: getList,
             add: function (book) {
 
             },
