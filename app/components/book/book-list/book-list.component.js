@@ -2,7 +2,7 @@ angular
     .module('bookList')
     .component('bookList', {
         bindings: {},
-        templateUrl: '/components/book-list/book-list.template.html',
+        templateUrl: '/components/book/book-list/book-list.template.html',
         controller: ['BookService', BookListController]
     });
 

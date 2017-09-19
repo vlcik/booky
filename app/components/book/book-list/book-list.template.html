@@ -1,0 +1,40 @@
+<div class="col-lg-10">
+    <div>
+        <a class="btn btn-primary" href="#!/books/add" role="button">Add New Book</a>
+        <book-search query="$ctrl.query"></book-search>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="book in $ctrl.books | filter: $ctrl.query">
+                <td>{{ book.id }}</td>
+                <td><a href="#!/book/{{ book.id }}">{{ book.name }}</a></td>
+                <td><a href="#!/author/{{ book.author }}">{{ book.author }}</a></td>
+                <td>{{ book.genre }}</td>
+                <td>
+                    <span ng-class="{
+                            badge: true,
+                            'badge-success': book.status == 'read',
+                            'badge-danger': book.status == 'unread',
+                            'badge-warning': book.status == 'partly'
+                            }">
+                        {{ book.status }}
+                    </span>
+                </td>
+            </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+</div>

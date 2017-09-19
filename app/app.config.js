@@ -12,6 +12,12 @@ angular.module('booky').config(['$locationProvider', '$routeProvider',
             .when('/books/add', {
                 template: '<book-add></book-add>'
             })
+            .when('/author/:authorName', {
+                template: '<author-detail></author-detail>'
+            })
+            .when('/authors', {
+                template: '<author-list></author-list>'
+            })
             .otherwise('/books');
     }
 ]);

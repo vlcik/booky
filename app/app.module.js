@@ -4,5 +4,7 @@ angular.module('booky', [
     'bookDetail',
     'bookList',
     'bookAdd',
-    'search'
+    'bookSearch',
+    'authorDetail',
+    'authorList'
 ]);

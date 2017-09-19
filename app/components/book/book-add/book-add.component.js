@@ -1,7 +1,7 @@
 angular
     .module('bookAdd')
     .component('bookAdd', {
-        templateUrl: '/components/book-add/book-add.template.html',
+        templateUrl: '/components/book/book-add/book-add.template.html',
         controller: ['$http', '$location', 'CategoryService', function($http, $location, CategoryService) {
 
             var self = this;

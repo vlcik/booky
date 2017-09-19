@@ -19,9 +19,7 @@
 
     <body>
         <div class="container col-lg-12" style="margin: 10px">
-            <div class="col-lg-10" style="margin-bottom: 35px;">
-                <h1 class="h1">Booky</h1>
-            </div>
+            <header></header>
 
             <div ng-view></div>
 
@@ -35,17 +33,25 @@
         <script src="app.module.js"></script>
         <script src="app.config.js"></script>
         <script src="core/core.module.js"></script>
+
         <script src="core/book/book.module.js"></script>
         <script src="core/book/book.service.js"></script>
         <script src="core/category/category.module.js"></script>
         <script src="core/category/category.service.js"></script>
-        <script src="components/book-list/book-list.module.js"></script>
-        <script src="components/book-list/book-list.component.js"></script>
-        <script src="components/book-detail/book-detail.module.js"></script>
-        <script src="components/book-detail/book-detail.component.js"></script>
-        <script src="components/book-add/book-add.module.js"></script>
-        <script src="components/book-add/book-add.component.js"></script>
-        <script src="components/search/search.module.js"></script>
-        <script src="components/search/search.component.js"></script>
+
+        <script src="components/header/header.component.js"></script>
+
+        <script src="components/book/book-list/book-list.module.js"></script>
+        <script src="components/book/book-list/book-list.component.js"></script>
+        <script src="components/book/book-detail/book-detail.module.js"></script>
+        <script src="components/book/book-detail/book-detail.component.js"></script>
+        <script src="components/book/book-add/book-add.module.js"></script>
+        <script src="components/book/book-add/book-add.component.js"></script>
+        <script src="components/book/book-search/book-search.module.js"></script>
+        <script src="components/book/book-search/book-search.component.js"></script>
+        <script src="components/author/author-detail/author-detail.module.js"></script>
+        <script src="components/author/author-detail/author-detail.component.js"></script>
+        <script src="components/author/author-list/author-list.module.js"></script>
+        <script src="components/author/author-list/author-list.component.js"></script>
     </body>
 </html>

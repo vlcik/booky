@@ -1,7 +1,7 @@
 angular
     .module('bookDetail')
     .component('bookDetail', {
-        templateUrl: '/components/book-detail/book-detail.template.html',
+        templateUrl: '/components/book/book-detail/book-detail.template.html',
         controller: ['BookService', '$routeParams', function BookDetailController(BookService, $routeParams) {
             this.bookId = $routeParams.bookId;
             var self = this;
