@@ -36,8 +36,8 @@
   },
   {
     "id": "6",
-    "name": "Robert Louis Stevenson",
-    "author": "The Treasure island",
+    "name": "The Treasure island",
+    "author": "Robert Louis Stevenson",
     "genre": "novel",
     "status": "read"
   },
@@ -47,5 +47,12 @@
     "author": "Eight Hundred Leagues on the Amazon",
     "genre": "novel",
     "status": "unread"
+  },
+  {
+    "id": "8",
+    "name": "Jules Verne",
+    "author": "Michail Strogov",
+    "genre": "novel",
+    "status": "partly"
   }
 ]
