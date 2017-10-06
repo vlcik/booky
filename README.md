@@ -1,4 +1,2 @@
 # booky
-Personal application for private library management 
-
-Simple Angularjs application for demonstrative purposes
+Frontend of personal application for private library management written in AngularJS
