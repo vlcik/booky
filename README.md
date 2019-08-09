@@ -1,2 +1,1 @@
-# booky
-Frontend of personal application for private library management written in AngularJS
+Personal library management written with React.

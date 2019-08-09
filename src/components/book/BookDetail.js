@@ -1,12 +1,11 @@
 import React from 'react';
  
-const BookDetail = ({ match }) => {
+const bookDetail = ({ match }) => {
   return (
     <div>
-      { console.log(match) }
       { match.params.id}
     </div>
   );
 }
 
-export default BookDetail;
+export default bookDetail;

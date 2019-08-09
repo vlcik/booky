@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import AddBook from './components/book/AddBook';
 import Header from './components/Header'
 import BookDashboard from './components/book/BookDashboard'
+import BookDetail from './components/book/BookDetail'
 import Footer from './components/Footer'
 
 const appRouter = () => {
@@ -14,6 +15,8 @@ const appRouter = () => {
                 </div>
 
                 <div className="row pb-3">
+
+                    <Route path={ '/books/:id' } component={ BookDetail } />
                     <Route exact path="/books/add" component={ AddBook } />
                     <Route exact path="/" component={ BookDashboard } />
                 </div>

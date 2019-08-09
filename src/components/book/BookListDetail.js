@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
-import BookDetail from './BookDetail';
+import { Link } from 'react-router-dom';
  
 class BookListDetail extends React.Component {
 
@@ -26,9 +25,6 @@ class BookListDetail extends React.Component {
         <td>
           {status}
         </td>
-
-        <Route path={ '/books/:id' } component={ BookDetail } />
-
       </tr>
       );
     }
